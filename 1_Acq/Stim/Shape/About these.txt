@@ -1,0 +1,8 @@
+About these stimuli
+
+
+
+
+These are arbitrary shapes, without any generative rule. Used by Seb and Caroline in ABL. Subjects are told that there is a rule that they have to figure out, and perceive themselves as being good at the task, but there is no ground truth.
+
+Stim numbers 1-384 were from this dataset that they created. I created more stim in 11/2016 because I needed a bigger stim base. Focused on simple rules to create new stim

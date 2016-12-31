@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Session 2 (Learn)</title>
+    <link rel="stylesheet" href="j0_CIS.css"  type="text/css">
+    <script type="text/javascript" src="j0_CIS_global.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="wrap_LearnTrial">
+
+    <!--Fixation -->
+    <!--<p class="Fixation">+</p>-->
+
+     <!-- Stimuli -->
+    <div class="StimQuestion"></div>
+    <div class="StimPres"></div>
+
+     <!-- Choices -->
+    <!--<div class="Ask1">Yes              No<br><p>&uarr;                       &darr;</p></div>   &lt;!&ndash; Binary choice response &ndash;&gt;-->
+    <div class="AskConfidence" style="display: none"><b>    Guess          Quite Sure          Very Sure</b><br><br>1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3</div>  <!-- Confidence response -->
+    <div class="AskAns"></div>
+
+    <!-- Info -->
+    <div class="SourceStim"></div>
+    <div class="Info"></div>
+
+    <!-- Outcome    -->
+    <div class="Outcome"></div>
+
+    <!-- Checks -->
+    <div class="Catch" style="width: 1200px;height: 500px;position: fixed;top: 40%; left: 50%; transform: translate(-50%, -50%);text-align: center;"></div>
+
+</div>
+
+
+
+<div class="wrap_Learn2AFC" style="display: none">
+    <p class="ChooseInfoText">Which source would you like to hear from?<br>Use L/R arrows to choose</p>
+    <div class="ChooseInfo1"></div>
+    <div class="ChooseInfo2"></div>
+    <div class="ChooseInfo3"></div>
+    <div class="ChooseInfo4"></div>
+    <p style="position: fixed;top: 80%; left: 50%; transform: translate(-50%, -50%);text-align: center;">Use the left and right arrows to respond</p>
+
+</div>
+
+
+<div class="wrap_ChooseAvatar" style="display: none">
+
+    <p>In this experiment, you will be playing an online game with four other people.<br> Everybody's choices in the game will be represented by a picture of an animal.<br><br>
+        <b>Which of the four animals shown below would you like to represent your choices to the other players?</b></p><br><br>
+    <div class="av1" style="width: 150px; height:40px; position: absolute; left: 60%; transform: translate(-50%, 0%)"></div>
+    <div class="av2" style="width: 150px; height:40px; position: absolute; left: 80%; transform: translate(-50%, 0%)"></div>
+    <div class="av3" style="width: 150px; height:40px; position: absolute; left: 20%; transform: translate(-50%, 0%)"></div>
+    <div class="av4" style="width: 150px; height:40px; position: absolute; left: 40%; transform: translate(-50%, 0%)"></div>
+    <br><br><br><br><br><br><br>
+
+    <p class="avinstruct"></p><br>
+    <p>If the screen is frozen on this page, please reload it and immediately select your avatar using 1-4 keyboard keys</p>
+</div>
+
+
+
+<div class="StartEnd_text" style="font-size: 0.8em"> </div>
+<script type="text/javascript" src="j2_Learn.js"></script>
+<a href=" " class="LinkInstruc" style="display:none" target="_blank">GO</a>
+<div class="DevMsgStart"></div>
+<div class="DevMsgEnd"></div>
+</body>
+</html>
+
+
+

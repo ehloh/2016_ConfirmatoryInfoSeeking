@@ -1,0 +1,323 @@
+body{
+    overflow: visible;
+    /*background: rgb(127, 126, 62);*/
+    background: rgb(166, 171, 166);
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    /* Text */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+/* Trial events */
+.StimQuestion{
+    vertical-align: top;
+    display: none;
+    font-size: 1em;
+    font-weight: bold;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Fixation{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+    font-size: 2em;
+}
+.StimPres{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.StimMask{
+    background: transparent;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.Ask1{
+    white-space: pre;
+    /*vertical-align: text-bottom;*/
+    font-size: 0.8em;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /*line-height: 10px;*/
+}
+.AskConfidence{
+    white-space: pre;
+    /*vertical-align: text-bottom;*/
+    font-size: 0.8em;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    /*line-height: 10px;*/
+}
+.Ask2 {
+    white-space: pre;
+    font-size: 1.5em;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.FeedbackText{
+    /*background: #7c7c7c;*/
+    background: transparent;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Ugly ass code :( */
+
+    /* text */
+    font-size: 1.3em;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 90px;
+    display: none;
+}
+.SourceStim{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Info{
+    background: rgb(227, 232, 227);
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* text */
+    font-size: 1em;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+.Outcome{
+    /*background: #7c7c7c;*/
+    background: transparent;
+    margin: auto;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-0%, -50%);  /* Ugly ass code :( */
+    /* text */
+    font-size: 1em;
+    font-weight: bold;
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    line-height: 90px;
+    display: none;
+}
+
+
+/* Admin */
+.LinkInstruc {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+}
+.LinkNextSession {
+    position: relative;
+    /*top: 80%;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8em;
+}
+.StartEnd_text{
+    /*background-color: #1a278b;*/
+    /*display: none;*/
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.3em;
+}
+.Instructions {
+    font-size: 12pt;
+    /*background-color: #1a278b;*/
+    margin: auto;
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    font-size: 0.7em;
+}
+.DevMsgStart {
+    background-color: #d8d5e6;
+    font-size: 10pt;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    text-align: left;
+}
+.DevMsgEnd {
+    background-color: #d1cb2d;
+    font-size: 10pt;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    text-align: left;
+}
+
+/* Instructions */
+.StimPresInstruc{
+    height: 300px;
+    width: 300px;
+}
+.wrap_s1instr{
+    margin: 50px
+}
+
+
+/* Session 3: Choice */
+.wrap_ChooseInfo {
+    display:none
+}
+.ChooseInfoText{
+    /*  Which info source do you want to hear from */
+    text-align: center;
+    /*vertical-align: middle;*/
+    display: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    top:85%;
+}
+.ChooseInfo1{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    /* text */
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+.ChooseInfo2{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    /* text */
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+
+/* Session 4: Rating */
+.Rate_qtext {
+    margin: 100px;
+    width: 800px;
+    height: 100px;
+    padding: 10px;
+    /*position: fixed;*/
+
+    /*top: -40%;*/
+    /*left: 0%;*/
+    /*transform: translate(50%, 50%);*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    font-size: 15pt;
+    /*line-height: 1em;*/
+
+
+    /* try this out
+    /**!*/
+    /*top: 0%;*/
+    /*left: 0%;*/
+    /*transform: translate(50%, 50%);*/
+    /*text-align: center;*/
+
+
+
+}
+.Rate_anskey1 {
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    top: 100%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.6em;
+}
+.Rate_anskey10 {
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    top: 100%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.6em;
+}
+.Rate_scale {
+    margin: auto;
+    width: 1500px;
+    height: 400px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 0.6em;
+
+}

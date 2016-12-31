@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Instructions</title>
+    <link rel="stylesheet" href="j0_CIS.css"  type="text/css">
+    <script type="text/javascript" src="j0_CIS_global.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <!-- Visuals -->
+    <style>
+        body{
+            margin: 50px;
+            font-size: 12pt;
+            line-height: 23px;
+        }
+        h1 {
+            background-color: #94a546;
+            line-height: 63px;
+            font-size: 1.5em;
+        }
+        h2 {
+            background-color: #94a546;
+            line-height: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+<script type="text/javascript" src="j1_Instructions.js"></script>
+
+<!-- ################################### CONSENT ################################### -->
+<div class="wrap_Consent" style="text-align: left; display: none">
+    <div>
+
+    <h2>Make sure your details are being recorded correctly</h2><br>
+
+    <div id="WorkerID">Recorded Worker ID  : __________________ </div>
+    <div id="AssignmentID">Recorded Assignment ID  : __________________ </div><br>
+
+    <li>If you don't see your Worker ID and Assignment ID above, <u><b>do not continue</b></u>, as we won't be able to find your data and will have to reject your HIT</li>
+    <li>If you don't see eight pictures of animals below, this means that something is wrong and <b><u>you should not continue with the HIT</u></b></li><br>
+    <div class="i_source1" style="width: 150px; height:40px; position: absolute; left: 20%; transform: translate(-50%, 0%)"> <img src="Stim/src_bird.png" height='150px' width='150px' alt="bird"> </div>
+    <div class="i_source2" style="width: 150px; height:40px; position: absolute; left: 40%; transform: translate(-50%, 0%)"> <img src="Stim/src_cat.png" height='150px' width='150px' alt="cat"> </div>
+    <div class="i_source3" style="width: 150px; height:40px; position: absolute; left: 60%; transform: translate(-50%, 0%)"> <img src="Stim/src_butterfly_small.png" height='150px' width='150px' alt="butterfly"> </div>
+    <div class="i_source4" style="width: 150px; height:40px; position: absolute; left: 80%; transform: translate(-50%, 0%)"> <img src="Stim/src_fox_small.png" height='150px' width='150px' alt="fox"></div>
+    <br><br><br><br><br><br><br><br>
+    <div class="i_source1" style="width: 150px; height:40px; position: absolute; left: 20%; transform: translate(-50%, 0%)"> <img src="Stim/src_dolphin_small.png" height='150px' width='150px' alt="dolphin"> </div>
+    <div class="i_source2" style="width: 150px; height:40px; position: absolute; left: 40%; transform: translate(-50%, 0%)"> <img src="Stim/src_peacock_small.png" height='150px' width='150px' alt="peacock"> </div>
+    <div class="i_source3" style="width: 150px; height:40px; position: absolute; left: 60%; transform: translate(-50%, 0%)"> <img src="Stim/src_elephant.png" height='150px' width='150px' alt="elephant"> </div>
+    <div class="i_source4" style="width: 150px; height:40px; position: absolute; left: 80%; transform: translate(-50%, 0%)"> <img src="Stim/src_fish.png" height='150px' width='150px' alt="fish"></div>
+    <br><br><br><br><br><br><br>
+
+    <h2>Technical difficulties</h2><br>
+
+    We expect the vast majority of people (>90%) to complete the experiment without any problems. However, we've seen (in the past)
+    that a small proportion of people do experience technical issues, <u>even though they
+    are using the exact same website that has worked for other people</u>. Often, this is because of some browser/internet
+    setting on their computer, that we have no control over. <br><br>
+
+    If you do experience technical issues, don't spend more than 10 minutes trying to fix it. We won't be able to
+    pay you the full amount for the HIT, but we will pay you for each session that you can show us
+    that you've attempted to do. Information on how you get compensated in this situation, and what you should do if you
+    encounter technical difficulties, is detailed <a target="_blank" href="acq0_Instructions.html" class="ErrorInfo">here</a>.
+    <br><br>
+
+     You can email the researcher at any point at learnreward at gmail dot com. Please note that, due to time differences,
+     you may not get an immediate reply.
+
+
+    <h2>Do you agree to do the study?</h2><br>
+    <b style='font-size: 1em'>Please read and sign the following consent by ticking the boxes below:</b><br><br>
+    </div>
+
+    <form style="text-align: left">
+        <input type="checkbox" name="q0_consent" value="q0_consent">I agree to the above conditions and I agree to take part in the above study. I understand that I am free to withdraw from the study without giving any reason if I so wish and I consent to the processing of my personal information for the purposes of this study only and that it will not be used for any other purpose. I understand that such information will be treated as strictly confidential and handled in accordance with the provisions of the Data Protection Act 1998.<br><br>
+        <input type="checkbox" name="q1_consent" value="q1_consent">I understand that, although most people manage to complete the experiment
+        with no difficulties, some people may not be able to complete it due to technical difficulties. If I am unable to complete the experiment
+        because of technical difficulties, I understand that I will be paid by the researchers according to how many sessions I am
+        able to prove that I completed. <br><br>
+        <input type="button" onclick="doCheck('Consent')" value="Continue to instructions"><br><br>
+    </form>
+    <div class="CheckFeedback" style="display:none"></div><br>
+    <a target="_blank" href="acq0_Instructions.html" class="LinkNextSession" style="display:none">GO</a>
+</div>
+
+<!-- ################################### PRACTICE ################################### -->
+<div class="wrap_Practice" style="display:none">
+    <div class="wrap_PracTrial">
+        <div class="StimQuestion"></div>
+        <div class="StimResponses"></div>
+        <div class="StimPres"></div>
+        <div class="StimFeedback" style="font-size: 1.8em; width: 400px"></div>
+        <a target="_blank"  href=" " class="LinkNextSession" style="display:none">Click here to continue</a>
+    </div>
+    <div class="InstrucPractice">
+        Welcome to our experiment! Please read these instructions carefully, as they will help you perform the task better (and win more money in the game)<br><br>
+
+        <h1><b>Learn to identify 'blaps'</b></h1><br>
+
+        We are interested in how good you are at categorizing objects. In this experiment, you will see many pictures of objects, with different shapes and colors.
+
+        Here are some examples:<br><br>
+        <img src="Stim/Shape/practice_stim13.bmp" width="200px" height="200px"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="Stim/Shape/practice_stim8.bmp" width="80px" height="200px"><br><br>
+
+        Your job is to learn how to recognize a certain type of object, called a ‘blap’. On each trial, the computer will
+        show you a picture of an object, and will ask you whether you think that it is a blap or not.  <br><br>
+
+        <b>There are certain rules that determine whether the object is likely to be a blap or not.</b><br><br>
+        These rules only determine if the object is <u>likely</u> to be a blap, but they will not definitely tell you whether
+        it is a blap or not. For example, the computer will never choose ‘sure thing’ rules, like ‘all shiny objects are
+        blaps’. Instead, the computer will choose rules like ‘<i>most but not all</i> shiny objects are blaps’.<br><br>
+
+        [ The ‘shiny objects’ is NOT the rule that is used in the experiment – it is just an example! ] <br><br>
+
+        <h1><b>Learn from the feedback that the computer gives you</b></h1><br>
+
+        After you make a guess, the computer will tell you whether you were correct or not. You can use that
+        feedback to get better at the task. You might not know how to tell if an object is a blap or not, however,
+        especially at the beginning of the session.<br><br>
+
+        Try your best to learn what those rules are, so that you can get better at classifying the objects as time goes
+        on. You will win more money in this experiment if you are good at recognizing when something is a blap or not!<br><br>
+
+        <h1><b>How do I make my response?</b></h1><br>
+
+        Press the <u>UP</u> arrow key for “yes” (if you think the object is a blap) or the <u>DOWN</u> arrow key for “no” (if you think
+        the object is NOT a blap). You should use your RIGHT hand to make these responses<br><br>
+
+        Let's just quickly practice that. Click the button below to start a practice.<br><br>
+        <input type="button" onclick="presPracticeTrial()" value="Start Practice Session"><br><br>
+    </div>
+</div>
+
+<!-- ################################### LEARN ################################### -->
+<div class="wrap_Learn" style="display:none">
+    <div>
+
+        Well done for completing the practice! This section of the experiment should take you between 0.5-1.5 hours to complete (depending
+        on how well you do). You will get the opportunity to take breaks in between blocks
+
+        <h1><b>Categorize objects alongside 4 other players</b></h1><br>
+
+        During this next session, you will have to categorize more objects. You will be doing so alongside 4 other online players. <br><br>
+
+        On every trial, you will first make a guess (about whether you think the object was a blap or not). Then, you will find out
+        what one of the other players thought about the object - whether they thought it was a blap or not. Then, you will find out
+        the true reality about whether the object was a blap or not. <br><br>
+
+        <!--The 4 players you will be playing with are:<br><br>-->
+
+        <!--<div class="i_source1" style="width: 150px; height:40px; position: absolute; left: 20%; transform: translate(-50%, 0%)"> <img src="Stim/src_bird.png" height='150px' width='150px' alt="bird"> </div>-->
+        <!--<div class="i_source2" style="width: 150px; height:40px; position: absolute; left: 40%; transform: translate(-50%, 0%)"> <img src="Stim/src_cat.png" height='150px' width='150px' alt="cat"> </div>-->
+        <!--<div class="i_source3" style="width: 150px; height:40px; position: absolute; left: 60%; transform: translate(-50%, 0%)"> <img src="Stim/src_elephant.png" height='150px' width='150px' alt="elephant"> </div>-->
+        <!--<div class="i_source4" style="width: 150px; height:40px; position: absolute; left: 80%; transform: translate(-50%, 0%)"> <img src="Stim/src_fish.png" height='150px' width='150px' alt="fish"></div><br><br><br><br><br><br><br><br>-->
+
+        This is what it will look like when someone gives you their guess about whether an object is a blap or not<br>
+        <div style="background-color: rgb(150, 150, 150); width: 300px; height: 200px; position: relative; left: 50%; top: 0%; transform: translate(-50%, 0%)">
+            <!--transform: translate(-50%, -50%)">-->
+            <p><b><br>Is this a blap?</b></p>
+            <img src="Stim/src_cat.png" height='100px' width='100px'>
+            <div class="i_sourceInfo" style="background-color: rgb(227, 232, 227); line-height: 40px; width: 30px; height:30px; position: absolute; font-size: 0.8em; left: 50%; top: 50%; transform: translate(-50%, 0%)">No</div>
+        </div><br><br>
+        This means that this player thinks that the object is NOT a blap (the CAT might not be one of the player you are playing against, this picture is just an example)<br><br>
+
+
+        The other players (who we'll call your 'sources') have the exact same information as you have, and will be doing their
+        best to guess whether each object is a blap or not. None of them have ever seen the objects that you are going to see
+        later on. <br><br>
+
+
+        <h1><b>Try to learn what you think of the other players</b></h1><br>
+
+        In the next stage of the experiment, you will have the opportunity to work together with the other players in the game. Thus, you should
+        use this session to form an impression of the other players, so that you can use this knowledge later on. <br><br>
+
+
+        The computer will tell you whether you were correct or not on every trial. This feedback relates to
+        how YOU did, not the other player. Although you are not explicitly told whether the source was correct, you should be
+        able to figure this out using the feedback, based on what you chose for that trial. You will win 100 points for every
+        correct guess you make, and lose 100 points for every incorrect one. You should try your best to categorize each object
+        accurately, as you will be paid a monetary bonus that is proportional to the total number of points that you win on the task.<br><br>
+
+        <b>Knowing how good each of the others are at recognizing blaps will help you in the task later on.</b><br><br>
+
+        Over the course of the experiment, you should try to figure out what you think of the 4 different sources
+        (i.e. how similar they are to you in their judgments, and how accurate you think they are). While it is unlikely that anybody
+        will be 100% correct, we expect some players to be better at this game than others. The 4 other sources are all likely
+        to be different from each other in some ways, so try to notice what is unique about each player as you go along.<br><br>
+
+        (Note: Try not to read too much into the animals that the other players have chosen to represent themseves in the game.
+        The animal pictures will not have any influence on how well they will do at recognizing blaps.)<br><br>
+
+        <h1><b>A few last things</b></h1><br>
+
+        Try to make a quick guess about each object, rather than thinking for a long time about every new object.
+        Generally, we find that people are just as good at identifying blaps if they rely on quick gut decisions. All the
+        objects that you see in this session will be unique - you will never see the same object twice (even though some of the objects might look similar).
+
+        <br><br>
+
+        Every once in a while, the computer will also ask you about the trial you just finished - whether you had judged the
+        object to be a blap or not, which source you heard from, or what the source  (the other player) said. The computer will show
+        you a sentence describing one aspect of the trial you just finished, and you will have to judge whether
+        the statement is true or false. <br><br>
+
+        If you are paying attention, you should find this easy to do! Don't worry if you occasionally make mistakes,
+        however. <br><br>
+
+         <h1><b>Let's check if you understand everything you need to know</b></h1><br>
+
+    </div>
+
+    <form id="checkcomp2" style="text-align: left; ">
+
+        <b>Tick all the true statements</b><br><br>
+        <input type="checkbox" name="q2_1">I will see the same objects again and again<br>
+        <input type="checkbox" name="q2_2">The animal pictures tell me something about how good the other player/source will be at recognizing blaps<br>
+        <input type="checkbox" name="q2_3">The 4 different sources are 4 other online players<br>
+        <input type="checkbox" name="q2_4">I should try to learn how the 4 sources are at recognizing blaps<br>
+        <input type="checkbox" name="q2_5">How well I do in this session will contribute to the bonus I am paid later on<br>
+        <br>
+        <i>The link for the next session will appear below once you have submitted all the correct answers<br><br></i>
+        <input type="button" onclick="doCheck('Learn')()" value="Check answers"><br><br>
+        <div class="CheckFeedback" style="display:none"></div><br>
+        <a target="_blank"  href="acq2_Learn.html" class="LinkNextSession" style="display:none">GO</a>
+
+    </form>
+</div>
+
+<!-- ################################### CHOOSE ################################### -->
+<div class="wrap_Choose" style="display:none">
+    <div>
+        Well done! This is the 2nd last session of the experiment. Please feel free to take a break now.<br><br>
+        (We have set up the HIT so that you should have time for a bit of a break) <br><br>
+
+        <h1><b>What do you think of the four players that you have been playing the game with?</b></h1><br>
+
+        By now, you should have a good idea of how the four other players make decisions and how good they are at the task.<br><br>
+
+        <b>Take a minute to think about the 4 other players<br><br></b>
+        What do you think is unique about how each of them makes decisions?
+        How would you describe each of the four others to someone else? Try to think about how they did over the
+        entire session, not just in the last few trials. <br><br><br><br>
+        <div class="i_source1" style="width: 150px; height:40px; position: absolute; left: 20%; transform: translate(-50%, 0%)"> <img src="Stim/src_bird.png" height='150px' width='150px' alt="bird"> </div>
+        <div class="i_source2" style="width: 150px; height:40px; position: absolute; left: 40%; transform: translate(-50%, 0%)"> <img src="Stim/src_cat.png" height='150px' width='150px' alt="cat"> </div>
+        <div class="i_source3" style="width: 150px; height:40px; position: absolute; left: 60%; transform: translate(-50%, 0%)"> <img src="Stim/src_elephant.png" height='150px' width='150px' alt="elephant"> </div>
+        <div class="i_source4" style="width: 150px; height:40px; position: absolute; left: 80%; transform: translate(-50%, 0%)"> <img src="Stim/src_fish.png" height='150px' width='150px' alt="fish"></div><br><br><br><br><br><br><br><br>
+
+        Take your time to decide what you think about each of the four other players - this will help you in this next session of
+        the experiment. <br><br><br><br><br><br><br><br>
+
+        <h1><b>You can use information from the other players to win more on the task</b></h1><br>
+
+        In this session, you will have to categorize more objects. Sometimes, you will get to use information from one of the
+        other players to help you do the task.<br><br>
+
+        Like before, you will see a picture of an object on every trial . All the objects will be new, and you will never see
+        the same object twice. You will have to use the same keyboard buttons as before to tell the computer if you think the object is a blap or not. <br><br>
+
+        On some trials (but not all of them), you will also get to hear from one of the other players.  The computer will show you
+        2 players/sources that you may hear from on that trial. You will then have to choose ONE of them to hear from.
+        <b>You should use what you know about the different players to make your decision.</b><br><br>
+
+        This is what the screen will look like:<br><br>
+
+        <div style="background-color: rgb(150, 150, 150); width: 300px; height: 200px; position: relative; left: 50%; top: 0%; transform: translate(-50%, 0%)">
+            <p><b><br>Which player would you like to hear from?</b></p>
+            <img src="Stim/src_cat.png" height='100px' width='100px' style="position: absolute; left: 30%; transform: translate(-50%, 0%)">
+            <img src="Stim/src_bird.png" height='100px' width='100px' style="position: absolute; left: 70%; transform: translate(-50%, 0%)">
+        </div><br><br>
+
+        Use the LEFT and RIGHT arrow keys to tell the computer which player you’d like to hear from
+        (the LEFT arrow for the left player, or the RIGHT arrow for the right player).<br><br>
+
+        After you make your choice, that player’s guess will be shown to you. You will then have the opportunity to change
+        your guess about whether you think the object is a blap or not. Unlike the previous session, you will NOT find out if
+        you were correct on every trial. The computer will keep track of how you are doing, though. <b>Your second answer will
+        also not be shown to the other players.</b> Only the computer will be keeping track of your final guesses.<br><br>
+
+
+
+        <h1><b>Sometimes you will not get to get help from the other players</b></h1><br>
+
+        Remember, you will not always get a chance to hear from the other players, or to make a second guess. For that reason,
+        you should always try your best to make an accurate guess the first time around.<br><br>
+
+        Like before, you will win 100 points for every correct guess you make, and lose 100 points for every incorrect one,
+        and your overall accuracy will help determine how much of a bonus we will pay you.<br><br>
+
+        The computer will also occasionally ask you about the trial you just completed, as in the previous session. These questions should
+        be easy for you to answer, but don't worry if you occasionally make mistakes. <br><br>
+
+        <h1><b>Let's check if you understand everything you need to know</b></h1><br>
+
+
+
+
+
+    </div>
+    <form id="checkcomp3" style="text-align: left">
+
+        <b>How is this session different from the previous one? Tick all that apply</b><br><br>
+        <input type="checkbox" name="q3_1">Instead of 1 other player, I will get to hear from 2 other players on each trial<br>
+        <input type="checkbox" name="q3_2">In this session, I will sometimes get to choose which player I want to hear from (out of 2)<br>
+        <input type="checkbox" name="q3_3">In this session, I will sometimes get to make 2 guesses<br>
+        <input type="checkbox" name="q3_4">How I do in this session doesn’t matter towards my bonus<br>
+        <input type="checkbox" name="q3_5">The other players will never get to see my final guesses<br><br>
+
+        <i>The link for the next session will appear below once you have submitted all the correct answers<br><br></i>
+        <input type="button" onclick="doCheck('Choose')" value="Check answers"><br><br>
+        <div class="CheckFeedback" style="display:none"></div><br>
+        <a target="_blank"  href="acq3_Choose.html" class="LinkNextSession" style="display:none">GO</a>
+
+    </form>
+</div>
+
+
+</body>
+</html>

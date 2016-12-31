@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>Session 4</title>
+    <link rel="stylesheet" href="j0_CIS.css"  type="text/css">
+    <script type="text/javascript" src="j0_CIS_global.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+ <!-- Rate source/self -->
+<div class="wrap_Rate" style="display:flex;justify-content:center;align-items:center;">
+
+    <!--<div style="display:flex;justify-content:center;align-items:center;width:800px;height:100px;">-->
+        <!--<div></div>-->
+    <!--</div>-->
+
+
+    <div class="RateSrc_sourcepic"></div>
+    <div class="Rate_qtext"></div>
+    <p class="Rate_scale" style="display: none">1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  10</p>
+    <p class="Rate_anskey1"></p>
+    <p class="Rate_anskey10"></p>
+
+</div>
+
+
+
+<!-- Admin/Instructions/Etc -->
+<p class="StartEnd_text" style="font-size: 12pt; position: fixed; width: 800px; height: 100px;
+    top: 80px">
+    Thank you for completing all the sessions so far! This is the last session of this experiment.<br><br>
+    In this session, we would like to learn more about what you think about the different players that you encountered. <br><br>
+        You'll be asked a few questions, and you should respond to each one by choosing a number from the scale of 1 to 10.
+    Use the number keys on your keyboard to make your response (with the zero key indicating a response of '10')<br><br>
+    The computer will always tell you what the 1 and 10 options on the scale indicate, but you should choose
+        whichever number on the scale best reflects how you feel.<br>
+    There is no time limit for you to make your choice for each question<br><br><br><br>
+
+    <b>The question being asked will change from trial to trial, so make sure you read it before making your choice!</b><br>
+    <br><br>
+    Press the zero key to start with the first question, after you have read and understood these instructions
+</p>
+
+<div class="wrap_DebriefQ" style="display: none">
+    <!-- Link to debrief form -->
+    <a href=" " class="LinkDebrief" style="display:none" target="_blank">Debrief Questionnaire</a><br><br>
+    <form id="checkdebrief">
+        Debrief Completion Code: <input type="text" name="debriefcode"><br>
+        <input type="button" onclick="checkDebriefResp()" value="Submit Debrief Completion Code">
+    </form>
+</div>
+
+
+<script type="text/javascript" src="j4_Rate.js"></script>
+
+
+
+
+</body>
+</html>
